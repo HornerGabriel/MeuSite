@@ -8,17 +8,17 @@
 
 :root {
   --ground: #ffffff;
-  --field: #f7f7f6;
+  --field: #f1f5ef;
   --ink: #3a3a3a;
   --text: #6b6b6b;
-  --muted: #8e8e8e;
+  --muted: #8a8a8a;
   --quiet: #737373;
   --hairline: #ececea;
 
-  --brown: #c9b29b;
-  --brown-soft: #f2ece5;
   --green: #a9bba3;
+  --green-mid: #8fa688;
   --green-soft: #eef2ec;
+  --green-wash: #e4ebe1;
   --green-deep: #5f7559;
 
   --tile: #f3f3f1;
@@ -57,7 +57,7 @@ body {
 }
 
 ::selection {
-  background: var(--brown-soft);
+  background: var(--green-soft);
   color: var(--ink);
 }
 
@@ -172,13 +172,13 @@ figure {
   bottom: -0.15rem;
   width: 1.25rem;
   height: 2px;
-  background: var(--brown);
+  background: var(--green-mid);
   transform: translateX(-50%) scaleX(0);
   transition: transform 0.45s var(--ease-out);
 }
 
 .site-nav a:hover {
-  color: var(--ink);
+  color: var(--green-deep);
 }
 
 .site-nav a[aria-current="page"] {
@@ -208,7 +208,7 @@ figure {
 }
 
 .social a:hover {
-  color: var(--ink);
+  color: var(--green-deep);
 }
 
 .social svg {
@@ -276,8 +276,8 @@ main {
   transition: transform 0.8s var(--ease-out);
 }
 
-.tile__media[data-tone="sand"] {
-  background: var(--brown-soft);
+.tile__media[data-tone="wash"] {
+  background: var(--green-wash);
 }
 
 .tile__media[data-tone="sage"] {
@@ -302,7 +302,7 @@ main {
 }
 
 .tile a figcaption span {
-  background: linear-gradient(var(--brown), var(--brown)) center bottom / 0 2px no-repeat;
+  background: linear-gradient(var(--green-mid), var(--green-mid)) center bottom / 0 2px no-repeat;
   padding-bottom: 0.2rem;
   transition: background-size 0.45s var(--ease-out);
 }
@@ -369,6 +369,10 @@ main {
 .timeline .when {
   color: var(--ink);
   font-variant-numeric: tabular-nums;
+}
+
+.timeline li:last-child .when {
+  color: var(--green-deep);
 }
 
 .tools dt {
@@ -449,6 +453,10 @@ main {
   position: relative;
 }
 
+.service--bundle .prices dd {
+  color: var(--green-deep);
+}
+
 .service--bundle h2::before {
   content: "";
   position: absolute;
@@ -456,7 +464,7 @@ main {
   top: -0.85rem;
   width: 1.25rem;
   height: 2px;
-  background: var(--green);
+  background: var(--green-mid);
 }
 
 .price-note {
@@ -497,7 +505,7 @@ main {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--brown);
+  background: var(--green-mid);
 }
 
 .process h3 {
@@ -533,9 +541,9 @@ main {
   gap: 0.6rem;
   margin-top: 1.75rem;
   padding: 0.8rem 1.5rem;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--green-deep);
   border-radius: 999px;
-  color: var(--ink);
+  color: var(--green-deep);
   font: inherit;
   text-decoration: none;
   transition: background-color 0.35s var(--ease-out), color 0.35s var(--ease-out);
@@ -548,7 +556,8 @@ main {
 }
 
 .button:hover {
-  background: var(--ink);
+  border-color: var(--green-deep);
+  background: var(--green-deep);
   color: var(--ground);
 }
 
@@ -567,7 +576,7 @@ main {
 }
 
 .site-footer a {
-  color: var(--text);
+  color: var(--green-deep);
   text-decoration: none;
 }
 

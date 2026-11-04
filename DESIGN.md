@@ -3,17 +3,17 @@ name: Gabriel Horner · Design
 description: A quiet gallery wall with a signature on it.
 colors:
   ground: "#ffffff"
-  field: "#f7f7f6"
+  field: "#f1f5ef"
   ink: "#3a3a3a"
   text: "#6b6b6b"
   quiet: "#737373"
-  muted: "#8e8e8e"
+  muted: "#8a8a8a"
   hairline: "#ececea"
   tile: "#f3f3f1"
-  brown: "#c9b29b"
-  brown-soft: "#f2ece5"
   green: "#a9bba3"
+  green-mid: "#8fa688"
   green-soft: "#eef2ec"
+  green-wash: "#e4ebe1"
   green-deep: "#5f7559"
 typography:
   display:
@@ -94,19 +94,19 @@ components:
     typography: "{typography.nav}"
   button-pill:
     backgroundColor: "{colors.ground}"
-    textColor: "{colors.ink}"
+    textColor: "{colors.green-deep}"
     typography: "{typography.body}"
     rounded: "{rounded.pill}"
     padding: "0.8rem 1.5rem"
   button-pill-hover:
-    backgroundColor: "{colors.ink}"
+    backgroundColor: "{colors.green-deep}"
     textColor: "{colors.ground}"
     rounded: "{rounded.pill}"
   tile-media:
     backgroundColor: "{colors.tile}"
     rounded: "{rounded.none}"
-  tile-media-sand:
-    backgroundColor: "{colors.brown-soft}"
+  tile-media-wash:
+    backgroundColor: "{colors.green-wash}"
   tile-media-sage:
     backgroundColor: "{colors.green-soft}"
   tile-caption:
@@ -128,39 +128,39 @@ components:
 
 **Creative North Star: "The Quiet Gallery Wall"**
 
-The site is a white gallery wall with a signature on it. A pale grey lintel carries the hand-signed logo, three large light nav words and a single icon; it stays perfectly still while the room below it changes from page to page. Everything under the lintel is white, low in contrast and set in one light slab face, so the work (and, until it exists, its placeholder tiles) is the loudest thing on screen.
+The site is a white gallery wall with a signature on it. A pale, almost-white sage lintel carries the hand-signed logo, three large light nav words and a single icon; it stays perfectly still while the room below it changes from page to page. Everything under the lintel is white, low in contrast and set in one light slab face, so the work (and, until it exists, its placeholder tiles) is the loudest thing on screen.
 
-Density is low and centred. Pages are single columns of centred titles and leads that open into a three-column grid, a two-column split or hairline-ruled rows. Structure comes from thin rules and whitespace, never from boxes, fills or shadows. Colour is about 90% white and grey ink; the remaining 10% is pastel brown and pastel green, spent only as small marks: a short underline, a dot, a tint, a selection.
+Density is low and centred. Pages are single columns of centred titles and leads that open into a three-column grid, a two-column split or hairline-ruled rows. Structure comes from thin rules and whitespace, never from boxes, fills or shadows. Colour is about 90% white and grey ink; the remaining 10% is pastel green alone, spent as small marks and a few states: a short underline, a dot, a tint, a selection, the pill button and a couple of highlighted words. There is no brown anywhere.
 
 The world explicitly refuses the dark "creative developer" portfolio with big claims and stat counters.
 
 **Key Characteristics:**
-- Still, pale-grey header lintel held in place across page navigations.
+- Still, almost-white pastel-green header lintel held in place across page navigations.
 - One light slab serif (Aleo) at weights 200 and 300 only.
 - Low-contrast grey ink on pure white; no colour fields.
-- Pastel brown and green as 2px marks and 7px dots, never surfaces.
+- Pastel green only, as 2px marks, 7px dots, tile tints and Deep Sage interaction states, never surfaces.
 - Hairline-separated rows instead of cards; flat, shadowless, square-cornered.
-- A single pill outline button that fills with ink on hover.
+- A single Deep Sage pill outline button that fills with Deep Sage on hover.
 
 ## Colors
 
-A near-monochrome warm-grey palette on pure white, with two dusty pastels held back for marks.
+A near-monochrome grey palette on pure white, with one sage-green family held back for marks and states.
 
 ### Primary
-- **Gallery Ink** (ink): headings, active nav item, captions, prices, dates and the pill button's stroke and hover fill. The darkest value on the site; nothing is pure black except the signature logo.
+- **Gallery Ink** (ink): headings, active nav item, captions, prices and dates. The darkest value on the site; nothing is pure black except the signature logo.
 
 ### Secondary
-- **Dusty Clay** (brown): the 2px × 1.25rem mark under the active nav item, the 7px dots on the process steps, and the 2px hover underline that grows under a linked tile caption.
-- **Clay Wash** (brown-soft): text selection background and the "sand" placeholder tile tint.
+- **Sage Line** (green-mid): the 2px × 1.25rem mark under the active nav item, the mark above the bundle service heading, the 7px dots on the process steps, and the 2px hover underline that grows under a linked tile caption.
+- **Deep Sage** (green-deep): the pill button's stroke, text and hover fill; nav and icon hover; the footer phone link; the "Hoje" timeline date; the bundle's "sob consulta" price; the 2px focus ring (offset 4px) and the text caret. The only green dark enough to carry text (5:1 on white).
 
 ### Tertiary
-- **Sage Mist** (green): the single 2px × 1.25rem mark above the bundle service heading.
-- **Sage Wash** (green-soft): the "sage" placeholder tile tint.
-- **Deep Sage** (green-deep): the 2px focus ring (offset 4px) and the text caret. The only saturated-enough green to carry an interaction state.
+- **Sage Mist** (green): reserved light green for future marks.
+- **Sage Wash** (green-soft): text selection background and the "sage" placeholder tile tint.
+- **Moss Wash** (green-wash): the slightly deeper "wash" placeholder tile tint.
 
 ### Neutral
 - **Gallery White** (ground): the page body. Every content surface sits on it.
-- **Lintel Grey** (field): the header band only.
+- **Lintel Sage** (field): the header band only; a pastel green so light it reads as tinted white. It is the one green surface the Ten Percent Rule allows.
 - **Soft Graphite** (text): body copy, leads, price labels, footer links at rest.
 - **Quiet Grey** (quiet): small text (footer line, price note, the "a partir de" prefix). The lightest grey allowed for text under 24px.
 - **Muted Grey** (muted): inactive nav items (rendered at 24px and above) and the 14px social icons. Never used for small text.
@@ -168,7 +168,7 @@ A near-monochrome warm-grey palette on pure white, with two dusty pastels held b
 - **Placeholder Stone** (tile): the default placeholder tile fill until real project images replace it.
 
 ### Named Rules
-**The Ten Percent Rule.** Pastel brown and green together stay at or under 10% of any screen. They appear only as a 2px mark, a 7px dot, a selection, a placeholder tint or a hover underline. A pastel section background, button fill or text colour breaks the world.
+**The Ten Percent Rule.** Green stays at or under 10% of any screen. It appears as a 2px mark, a 7px dot, a selection, a placeholder tint, a hover underline, the Deep Sage pill button, Deep Sage hover states and at most a couple of highlighted words per page. A pastel section background breaks the world. Brown is retired: never reintroduce it.
 
 **The Legible Grey Rule.** Muted Grey is for nav words at 24px or larger and for icons. Any text smaller than that uses Quiet Grey or darker.
 
@@ -214,7 +214,7 @@ Rhythm: rows breathe at the row step; major sections separate at the section ste
 
 ## Elevation & Depth
 
-The system is completely flat. There are no shadows anywhere. Depth is a single tonal step: the Lintel Grey header sits above Gallery White. Hierarchy below it comes from hairlines and whitespace. Motion is the only other source of depth: tiles rise 14px out of a 4px blur on load (staggered 70ms), and tile images scale to 1.03 on hover inside their clipped frame.
+The system is completely flat. There are no shadows anywhere. Depth is a single tonal step: the Lintel Sage header sits above Gallery White. Hierarchy below it comes from hairlines and whitespace. Motion is the only other source of depth: tiles rise 14px out of a 4px blur on load (staggered 70ms), and tile images scale to 1.03 on hover inside their clipped frame.
 
 ### Named Rules
 **The Flat Wall Rule.** Surfaces are flat at rest and in every state. Hover changes colour, a mark's length or an image's scale, never elevation.
@@ -230,40 +230,40 @@ Square by default. Tiles, rules and the header band have no radius. Only two rou
 ### Buttons
 Soft, outlined and quiet until touched.
 - **Shape:** full pill (999px).
-- **Default:** 1px Gallery Ink stroke, transparent on white, Gallery Ink text in body type, padding 0.8rem × 1.5rem, optional 16px leading icon with a 0.6rem gap.
-- **Hover:** fills with Gallery Ink and the text turns white, over 0.35s on the shared ease-out.
+- **Default:** 1px Deep Sage stroke, transparent on white, Deep Sage text in body type, padding 0.8rem × 1.5rem, optional 16px leading icon with a 0.6rem gap.
+- **Hover:** fills with Deep Sage and the text turns white, over 0.35s on the shared ease-out.
 - **Focus:** the global 2px Deep Sage ring, 4px offset.
 - There is one button style. It is used for the WhatsApp call to action in each contact band.
 
 ### Navigation
 - **Style:** three centred words in the nav type role, Muted Grey at rest, gap 1.25–2rem.
-- **Hover:** turns Gallery Ink over 0.3s.
-- **Active page:** Gallery Ink plus a centred 2px × 1.25rem Dusty Clay mark just below the word, which scales in from the centre over 0.45s.
+- **Hover:** turns Deep Sage over 0.3s.
+- **Active page:** Gallery Ink plus a centred 2px × 1.25rem Sage Line mark just below the word, which scales in from the centre over 0.45s.
 - **Mobile:** the same words wrap centred; no hamburger.
-- **Social row:** 32px hit targets holding 14px icons in Muted Grey, Gallery Ink on hover.
+- **Social row:** 32px hit targets holding 14px icons in Muted Grey, Deep Sage on hover.
 
 ### Cards / Containers
 There are no cards. The portfolio tile is an image frame, not a container.
-- **Tile media:** square-cornered 4:3.1 frame, clipped, Placeholder Stone fill (or Clay Wash / Sage Wash tints) until a cover image lands.
-- **Caption:** centred, 1rem below the frame, Gallery Ink. When the tile links to a project, a 2px Dusty Clay underline grows from the centre on hover.
+- **Tile media:** square-cornered 4:3.1 frame, clipped, Placeholder Stone fill (or Sage Wash / Moss Wash tints) until a cover image lands.
+- **Caption:** centred, 1rem below the frame, Gallery Ink. When the tile links to a project, a 2px Sage Line underline grows from the centre on hover.
 
 ### Service Row
-The signature data pattern: a hairline-bounded row with the service name as a title, a description in Soft Graphite, and a price list where labels sit left and tabular prices sit right in Gallery Ink, each prefixed by "a partir de" in the fine role. The bundle row is marked by a single 2px Sage Mist line above its name.
+The signature data pattern: a hairline-bounded row with the service name as a title, a description in Soft Graphite, and a price list where labels sit left and tabular prices sit right in Gallery Ink, each prefixed by "a partir de" in the fine role. The bundle row is marked by a single 2px Sage Line mark above its name (positioned absolutely so the row's columns stay aligned) and its "sob consulta" price in Deep Sage.
 
 ### Process Steps
-Four short columns, each topped by a hairline with a 7px Dusty Clay dot sitting on its left end.
+Four short columns, each topped by a hairline with a 7px Sage Line dot sitting on its left end.
 
 ### Contact Band
 The closing beat of every page: a centred headline in weight 200, one line of body and the pill button.
 
 ### Footer
-Hairline top, centred small text in Quiet Grey, phone link in Soft Graphite that underlines and darkens on hover.
+Hairline top, centred small text in Quiet Grey, phone link in Deep Sage that underlines on hover.
 
 ## Do's and Don'ts
 
 ### Do:
 - **Do** keep the header markup identical on every page so the view transition holds the lintel still.
-- **Do** keep pastel use to the listed marks: active-nav underline, bundle mark, process dots, selection, placeholder tints, linked-caption hover underline.
+- **Do** keep green use to the listed marks and states: active-nav underline, bundle mark, process dots, selection, placeholder tints, linked-caption hover underline, the pill button, hover states, the footer phone link and the two highlighted words.
 - **Do** separate lists with 1px Hairline rules and generous row padding.
 - **Do** set every word in Aleo at weight 200 (display, headline) or 300 (everything else).
 - **Do** use Quiet Grey or darker for any text under 24px; reserve Muted Grey for large nav words and icons.
@@ -271,7 +271,7 @@ Hairline top, centred small text in Quiet Grey, phone link in Soft Graphite that
 - **Do** keep the signature logo black and unaltered.
 
 ### Don't:
-- **Don't** fill a section, button or band with pastel brown or green.
+- **Don't** fill a section or band with green, and don't use brown anywhere.
 - **Don't** introduce cards, panels, shadows or rounded containers.
 - **Don't** add a second typeface or any weight above 300.
 - **Don't** add dark sections, stat counters or big-claim headlines.

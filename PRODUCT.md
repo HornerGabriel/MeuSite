@@ -43,7 +43,7 @@ A full-time designer since January 2023 who also builds games: brand identity gr
 
 - Logo: hand signature, `HornerLogoSVG.svg` (black).
 - Name: Gabriel Luis Horner. Site title: "Gabriel Horner · Design".
-- Brand is ~90% white and black; ~10% small details in pastel brown or pastel green.
+- Brand is ~90% white and black; ~10% small details in pastel green (brown was removed at the user's request; green is slightly more present: button, hover states, a few highlighted words).
 - User-pinned reference: Adobe Portfolio template (large light-grey header with centered logo, large light nav of three items, small social icons, white body, three-column project grid with captions). Site must be light, clean, low contrast, with a light-weight typeface.
 - Language: Brazilian Portuguese.
 
