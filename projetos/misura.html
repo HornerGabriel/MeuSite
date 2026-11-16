@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f5ef">
+  <title>Misura · Modelagem 3D · Gabriel Horner</title>
+  <meta name="description" content="Projeto de modelagem e render 3D de peças de mão odontológicas para a Misura.">
+  <link rel="icon" href="../assets/img/logo-horner.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/aleo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+  </svg>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Gabriel Horner, página inicial">
+      <img src="../assets/img/logo-horner.svg" alt="Gabriel Horner" width="156" height="81">
+    </a>
+    <nav class="site-nav" aria-label="Principal">
+      <ul>
+        <li><a href="../index.html" aria-current="page">Portfólio</a></li>
+        <li><a href="../sobre.html">Sobre</a></li>
+        <li><a href="../servicos.html">Serviços</a></li>
+      </ul>
+    </nav>
+    <ul class="social" aria-label="Redes e contato">
+      <li><a href="https://wa.me/5547997344362" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#icon-whatsapp"/></svg></a></li>
+    </ul>
+  </header>
+
+  <main id="conteudo">
+    <header class="project-intro">
+      <a class="project-back" href="../index.html">← Portfólio</a>
+      <h1 class="page-title">Misura</h1>
+      <p class="lead">Modelagem e render 3D de peças de mão odontológicas: acabamento metálico, detalhes mecânicos e apresentação de produto.</p>
+      <p class="project-meta">Modelagem 3D · Render de produto · Animação</p>
+    </header>
+
+    <div class="gallery">
+      <figure>
+        <img src="../assets/projetos/misura/galeria/TB04.png" alt="Peça de mão odontológica Misura, detalhe da cabeça em render 3D" width="1080" height="1920" fetchpriority="high">
+      </figure>
+
+      <div class="gallery__pair">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/TB01.png" alt="Peça de mão Misura, vista frontal" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/TB02.png" alt="Peça de mão Misura, vista lateral" width="1080" height="1920" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="gallery__trio">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/TB03.png" alt="Peça de mão Misura, variação de ângulo" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/TB05.png" alt="Peça de mão Misura, detalhe do acabamento" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CA01.png" alt="Peça de mão Misura, série CA" width="1080" height="1920" loading="lazy">
+        </figure>
+      </div>
+    </div>
+
+    <section
+      class="sequence"
+      data-sequence
+      data-src="../assets/projetos/misura/frames/{n}.jpg"
+      data-frames="90"
+      data-pad="4"
+      data-start="1"
+      data-fit="cover"
+      style="--sequence-length: 320vh"
+      aria-label="Animação 3D da peça de mão Misura, controlada pela rolagem"
+    >
+      <div class="sequence__stage">
+        <canvas role="img" aria-label="Sequência de frames da peça de mão em rotação 3D"></canvas>
+        <p class="sequence__hint">Role para girar</p>
+      </div>
+    </section>
+
+    <div class="gallery">
+      <div class="gallery__pair">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CA02.png" alt="Peça de mão Misura, série CA, ângulo 2" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CA03.png" alt="Peça de mão Misura, série CA, ângulo 3" width="1080" height="1920" loading="lazy">
+        </figure>
+      </div>
+
+      <figure>
+        <img src="../assets/projetos/misura/galeria/Horizontal_01.jpg" alt="Peças de mão Misura em composição horizontal" width="2048" height="1152" loading="lazy">
+      </figure>
+
+      <div class="gallery__trio">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CJ01.png" alt="Peça de mão Misura, série CJ" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CJ02.png" alt="Peça de mão Misura, série CJ, ângulo 2" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CJ03.png" alt="Peça de mão Misura, série CJ, ângulo 3" width="1080" height="1920" loading="lazy">
+        </figure>
+      </div>
+
+      <figure>
+        <img src="../assets/projetos/misura/galeria/Horizontal_02.jpg" alt="Render horizontal das peças Misura" width="2048" height="1152" loading="lazy">
+      </figure>
+
+      <div class="gallery__pair">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/Vertical_01.jpg" alt="Peça de mão Misura em formato vertical" width="1152" height="2048" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/Vertical_02.jpg" alt="Peça de mão Misura em formato vertical, segundo ângulo" width="1152" height="2048" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="gallery__trio">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CA04.png" alt="Peça de mão Misura, série CA, ângulo 4" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CJ04.png" alt="Peça de mão Misura, série CJ, ângulo 4" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CA05.png" alt="Peça de mão Misura, série CA, ângulo 5" width="1080" height="1920" loading="lazy">
+        </figure>
+      </div>
+
+      <figure>
+        <img src="../assets/projetos/misura/galeria/horizontal_03.jpg" alt="Composição horizontal Misura" width="2048" height="1152" loading="lazy">
+      </figure>
+
+      <div class="gallery__pair">
+        <figure>
+          <img src="../assets/projetos/misura/galeria/CJ05.png" alt="Peça de mão Misura, série CJ, ângulo 5" width="1080" height="1920" loading="lazy">
+        </figure>
+        <figure>
+          <img src="../assets/projetos/misura/galeria/vertical_03.jpg" alt="Peça de mão Misura em formato vertical, terceiro ângulo" width="1152" height="2048" loading="lazy">
+        </figure>
+      </div>
+
+      <figure>
+        <img src="../assets/projetos/misura/galeria/horizontal_04.jpg" alt="Render horizontal Misura, variação 4" width="2048" height="1152" loading="lazy">
+      </figure>
+
+      <figure>
+        <img src="../assets/projetos/misura/galeria/horizontal_05.jpg" alt="Render horizontal Misura, variação 5" width="2048" height="1152" loading="lazy">
+      </figure>
+    </div>
+
+    <section class="related" aria-labelledby="outros-projetos">
+      <h2 class="section-title" id="outros-projetos">Outros projetos</h2>
+      <ul class="grid">
+        <li class="tile" style="--i:0">
+          <a href="crochetbeyond.html">
+            <figure>
+              <div class="tile__media">
+                <img src="../assets/projetos/crochetbeyond/capa.jpg" alt="" width="1400" height="1050" loading="lazy">
+              </div>
+              <figcaption><span>Beyond Crochê · Identidade</span></figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="tile tile--soon" style="--i:1">
+          <figure>
+            <div class="tile__media tile__media--placeholder" data-tone="sage" aria-hidden="true"></div>
+            <figcaption><span>Kodhex · em breve</span></figcaption>
+          </figure>
+        </li>
+        <li class="tile tile--soon" style="--i:2">
+          <figure>
+            <div class="tile__media tile__media--placeholder" data-tone="wash" aria-hidden="true"></div>
+            <figcaption><span>Zola Moraes · em breve</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+
+      <div class="project-actions">
+        <a class="button button--quiet" href="../index.html">Retornar à home</a>
+        <a class="button" href="https://wa.me/5547997344362?text=Ol%C3%A1%20Gabriel!%20Vi%20o%20projeto%20Misura%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+          Entrar em contato
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Gabriel Luis Horner · Design, motion e 3D</p>
+    <p><a href="https://wa.me/5547997344362" target="_blank" rel="noopener">(47) 99734-4362</a></p>
+  </footer>
+
+  <script src="../js/scroll-sequence.js" defer></script>
+</body>
+</html>

@@ -3,3 +3,9 @@ node_modules/
 Thumbs.db
 desktop.ini
 .DS_Store
+ArquivosPortfólio/
+
+assets/projetos/crochetbeyond/pages/
+assets/projetos/crochetbeyond/_preview/
+assets/projetos/**/*.json
+

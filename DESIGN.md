@@ -205,7 +205,7 @@ The header is a full-width centred band (logo 112–130px wide, nav, icon row). 
 
 Portfolio: three-column grid of 4:3.1 tiles, two columns below 860px, one below 480px. About: 1.15fr / 1fr split under a hairline, stacking below 640px. Services: three-column rows (name / description / prices), two columns with the name spanning below 860px, one column below 640px. Process: four steps, then two, then one.
 
-Rhythm: rows breathe at the row step; major sections separate at the section step; the contact band sits furthest down (4.5rem → 7rem) as the page's closing beat. Every page ends in the contact band and the footer.
+Rhythm: rows breathe at the row step; major sections separate at the section step. Marketing pages close with the contact band (4.5rem → 7rem) then the footer; project pages close with Related projects + actions, then the footer.
 
 ### Named Rules
 **The Hairline Row Rule.** Lists of things (services, timeline entries, process steps) are separated by 1px Hairline rules on white, not placed in cards.
@@ -223,17 +223,16 @@ The system is completely flat. There are no shadows anywhere. Depth is a single 
 
 ## Shapes
 
-Square by default. Tiles, rules and the header band have no radius. Only two rounded forms exist: the full pill of the single button, and the 7px circle of the process dots. The focus ring carries a 2px radius so it reads softly around text. Lines are always 1px (structure) or 2px (marks, focus).
+Square by default. Tiles, rules and the header band have no radius. Rounded forms: the full pill shared by both button styles, and the 7px circle of the process dots. The focus ring carries a 2px radius so it reads softly around text. Lines are always 1px (structure) or 2px (marks, focus).
 
 ## Components
 
 ### Buttons
 Soft, outlined and quiet until touched.
 - **Shape:** full pill (999px).
-- **Default:** 1px Deep Sage stroke, transparent on white, Deep Sage text in body type, padding 0.8rem × 1.5rem, optional 16px leading icon with a 0.6rem gap.
-- **Hover:** fills with Deep Sage and the text turns white, over 0.35s on the shared ease-out.
+- **Primary (contact):** 1px Deep Sage stroke, transparent on white, Deep Sage text in body type, padding 0.8rem × 1.5rem, optional 16px leading icon with a 0.6rem gap. Hover fills Deep Sage; text turns white.
+- **Quiet (home / secondary):** same pill, 1px Gallery Ink stroke and ink text (`.button--quiet`). Hover fills ink.
 - **Focus:** the global 2px Deep Sage ring, 4px offset.
-- There is one button style. It is used for the WhatsApp call to action in each contact band.
 
 ### Navigation
 - **Style:** three centred words in the nav type role, Muted Grey at rest, gap 1.25–2rem.
@@ -254,7 +253,10 @@ The signature data pattern: a hairline-bounded row with the service name as a ti
 Four short columns, each topped by a hairline with a 7px Sage Line dot sitting on its left end.
 
 ### Contact Band
-The closing beat of every page: a centred headline in weight 200, one line of body and the pill button.
+Closing beat on marketing pages (home, Sobre, Serviços): a centred headline in weight 200, one line of body and the primary WhatsApp pill.
+
+### Related projects (case studies)
+Project pages close with a hairline, the title "Outros projetos", three portfolio tiles (live links or soon placeholders using sage/wash tones), then `.project-actions`: quiet Home pill + primary WhatsApp pill.
 
 ### Footer
 Hairline top, centred small text in Quiet Grey, phone link in Deep Sage that underlines on hover.
@@ -267,7 +269,7 @@ Hairline top, centred small text in Quiet Grey, phone link in Deep Sage that und
 - **Do** separate lists with 1px Hairline rules and generous row padding.
 - **Do** set every word in Aleo at weight 200 (display, headline) or 300 (everything else).
 - **Do** use Quiet Grey or darker for any text under 24px; reserve Muted Grey for large nav words and icons.
-- **Do** end every page with the contact band and its WhatsApp pill button.
+- **Do** end marketing pages with the contact band; end project pages with related tiles plus Home and WhatsApp actions.
 - **Do** keep the signature logo black and unaltered.
 
 ### Don't:

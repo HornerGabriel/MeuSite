@@ -50,7 +50,7 @@ A full-time designer since January 2023 who also builds games: brand identity gr
 ## Evidence on Hand
 
 - Bio facts: full-time designer since Jan 2023; brands for industrial and food sectors; game development for Fortnite 2025–2026; owns a game development company whose first game launches May 2027.
-- No project images yet: portfolio uses placeholder blocks to be replaced. No testimonials, clients, or metrics exist; do not invent them.
+- Project assets live under `ArquivosPortfólio/` (source) and shipping copies under `assets/projetos/`. Shipped: Misura (`projetos/misura.html`) and Beyond Crochê (`projetos/crochetbeyond.html`): identity plates from `APN IDV.pdf` plus live evidence from https://beyondcroche.com/ (site screenshots, product photos, brand banners). Project pages close with three related tiles plus Home and WhatsApp actions. Pending: Kodhex, Zola Moraes, and the unnamed identity proposal folder. No testimonials or metrics; do not invent them.
 
 ## Product Principles
 
